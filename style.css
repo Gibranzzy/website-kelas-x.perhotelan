@@ -1,0 +1,313 @@
+/* Reset dan Font Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8; /* Background terang */
+    color: #333;
+}
+
+/* ---------------- HEADER & NAVIGASI ---------------- */
+header {
+    background: #4CAF50; /* Warna hijau ceria */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #388E3C; /* Hijau lebih gelap saat di-hover */
+}
+
+/* ---------------- BAGIAN INTRO/HERO ---------------- */
+#intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.foto-kelas {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#intro h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+/* ---------------- PENGUMUMAN (Card) ---------------- */
+#pengumuman {
+    padding: 30px 20px;
+    background-color: #e0f2f1; /* Background lembut untuk bagian ini */
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: left;
+}
+
+.card h3 {
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+.tanggal {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #777;
+}
+
+/* ---------------- CTA Galeri ---------------- */
+#cta-galeri {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #ffcc80; /* Warna oranye lembut */
+}
+
+.tombol-galeri {
+    display: inline-block;
+    background: #FF9800; /* Oranye terang */
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.tombol-galeri:hover {
+    background-color: #F57C00;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}/* --- Tambahan Styling untuk Halaman Anggota --- */
+
+#daftar-anggota {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#daftar-anggota h2 {
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+#daftar-anggota p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* ---------------- CSS GRID UNTUK TATA LETAK ---------------- */
+
+.grid-container {
+    display: grid;
+    /* Membuat kolom responsif: minimal 250px per kolom */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 30px; /* Jarak antar kartu */
+    max-width: 1200px; /* Batasi lebar container */
+    margin: 0 auto;
+}
+
+/* ---------------- KARTU ANGGOTA ---------------- */
+
+.kartu-anggota {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.kartu-anggota:hover {
+    transform: translateY(-5px); /* Efek melayang saat di-hover */
+}
+
+.foto-profil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Membuat foto menjadi lingkaran */
+    object-fit: cover; /* Memastikan gambar pas tanpa merusak rasio */
+    margin-bottom: 15px;
+    border: 3px solid #4CAF50; /* Border warna kelas */
+}
+
+.kartu-anggota h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.jabatan {
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.motto {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Styling untuk indikator navigasi aktif */
+.active {
+    background-color: #388E3C; 
+    border-radius: 5px;
+}
+/* --- Styling untuk Halaman Galeri --- */
+
+#galeri-foto {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#galeri-foto h2 {
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+#galeri-foto p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* ---------------- CSS GRID UNTUK GALERI ---------------- */
+.galeri-grid {
+    display: grid;
+    /* Membuat layout 3 kolom, minimal 300px per kolom */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 15px; /* Jarak antar foto */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeri-item {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden; /* Penting agar gambar tidak keluar dari container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.galeri-item img {
+    width: 100%; /* Memastikan gambar memenuhi lebar item */
+    height: 250px; /* Tinggi gambar dibuat seragam */
+    object-fit: cover; /* Memastikan gambar pas tanpa terdistorsi */
+    transition: transform 0.5s;
+}
+
+.galeri-item img:hover {
+    transform: scale(1.05); /* Efek zoom saat kursor di atas gambar */
+}
+
+.caption {
+    padding: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f0f0;
+}
+/* --- Styling untuk Halaman Jadwal (Tabel) --- */
+
+#jadwal-pelajaran {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#jadwal-pelajaran h2 {
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+#jadwal-pelajaran p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* ---------------- Styling Tabel ---------------- */
+
+table {
+    width: 90%; /* Lebar tabel 90% dari container */
+    margin: 0 auto; /* Tengah tabel di halaman */
+    border-collapse: collapse; /* Menghilangkan jarak antar border sel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Styling Header Tabel (Judul Kolom) */
+thead th {
+    background-color: #4CAF50; /* Warna hijau kelas */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Styling untuk Baris Ganjil-Genap (Striped Rows) */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Warna abu-abu muda */
+}
+
+/* Styling saat Kursor di atas Baris */
+tbody tr:hover {
+    background-color: #e6ffe6; /* Warna hijau super muda saat di-hover */
+}
+
+/* Styling Khusus untuk Baris Istirahat */
+.istirahat td {
+    background-color: #FFC107; /* Warna kuning mencolok */
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.catatan {
+    margin-top: 20px;
+    font-size: 0.85em;
+    color: #888;
+}
